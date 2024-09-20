@@ -20,8 +20,8 @@ spark.conf.set("spark.sql.adaptive.coalescePartitions.enabled", "true")
 args = getResolvedOptions(sys.argv, ['JOB_NAME'])
 
 # Set the input and output paths
-input_path = "s3://etl-bucket/input/"
-output_path = "s3://etl-bucket/output/"
+input_path = "s3://"
+output_path = "s3://"
 
 # Function to read CSV and write Parquet
 def csv_to_parquet(input_file, output_file):
